@@ -19,7 +19,7 @@ class RunFlowRequest(BaseModel):
 
 @app.get("/")
 def setup():
-    return {"result" : True}
+    return {"health" : True}
 
 @app.post("/run-flow")
 async def run_flow(request: RunFlowRequest):
